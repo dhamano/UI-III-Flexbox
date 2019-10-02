@@ -135,6 +135,13 @@ header nav a:hover, footer a:hover {
   color: #0066ee;
 }
 
+.current {
+  color: #000;
+  cursor: default;
+}
+
+header nav a.current { color: #000; }
+
 .logo {
 }
 
@@ -143,64 +150,83 @@ main  section {
   margin: 0 auto;
 }
 
-.hero {
-  padding: 40px 0 50px 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.services-header {
+  padding: 20px 0 40px 0;
 }
 
-.cta {
-  text-align: center;
-}
-
-.hero h1 {
+.services-header h1 {
+  margin-top: 40px;
   letter-spacing: .05em;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 2em;
 }
 
-.top {
-  padding: 40px 0;
+p {
+  line-height: 1.25em;
+}
+
+.service-desc {
+  padding-top: 10px;
+  border-top: 1px solid #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-desc div {
+  width: 48%;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f4f3f4;
+  border: 1px solid #333;
+}
+
+.service-desc a {
+  margin-top: 25px;
+  padding: 10px 40px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 1s, color 1s, border-color 1s;
+}
+
+.service-desc a:hover {
+  background-color: #33cc33;
+  color: #fff;
+  border-color: #33cc33;
+}
+
+.mrktg {
+  margin-top: 40px;
+  padding-top: 40px;
   border-top: 1px solid #333;
   display: flex;
   justify-content: space-between;
 }
 
-.top div {
-  width: 49%;
+.mrktg div {
+  width: 50%;
 }
 
-.middle-img {
-  width: 955px;
-  margin: 0 auto 0;
-  display: block;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.mrktg h3 {
+  font-size: 1.25em;
 }
 
-.bottom {
-  margin-top: 40px;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: space-between;
+.mrktg ul {
+  margin: 20px 0 0 20px;
 }
 
-.bottom div {
-  width: 30%;
-}
-
-.bottom div:last-child { margin-right: 0; }
-
-.bottom p {
-  margin-bottom: 30px;
+.mrktg li {
+  line-height: 2em;
+  list-style-type: square;
 }
 
 footer {
   max-width: 955px;
   margin: 30px auto;
-  padding: 40px 0;
-  border-top: 1px solid #333;
+  padding-top: 20px;
 }
 
 footer li {
